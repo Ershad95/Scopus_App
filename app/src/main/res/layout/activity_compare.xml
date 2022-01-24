@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/back"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<LinearLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="#ff3e3e"
+
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp"
+        android:weightSum="1">
+        <ImageView
+            android:id="@+id/imgBack"
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/arrow" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="مقایسه کشورها"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16"
+            android:layout_weight="0.96" />
+        <ImageView
+            android:tint="#fff"
+            android:layout_width="50dp"
+            android:src="@drawable/flag"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <include layout="@layout/shadow"></include>
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:text="کشور اول را انتخاب کنید"
+            android:padding="5dp"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:background="@drawable/back_spain"
+            android:entries="@array/country"
+            android:layout_margin="10dp"
+            android:textAlignment="center"
+            android:padding="10dp"
+
+            android:id="@+id/country1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_margin="5dp"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:text="کشور اول را انتخاب کنید"
+            android:padding="5dp"
+            android:layout_height="wrap_content" />
+
+        <Spinner
+            android:background="@drawable/back_spain"
+            android:id="@+id/country2"
+            android:entries="@array/country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+<Button
+    android:id="@+id/btnCompare"
+    android:background="@drawable/back_btn"
+    android:layout_width="wrap_content"
+    android:textStyle="bold"
+    android:textColor="#fff"
+    android:text="مقایسه"
+    android:layout_gravity="center"
+    android:layout_height="wrap_content" />
+
+    <include layout="@layout/shadow"></include>
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:id="@+id/parent_country1"
+            android:layout_margin="5dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.51"
+            android:orientation="vertical">
+
+            <TextView
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:id="@+id/txtCountry1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="--------" />
+
+            <ImageView
+                android:id="@+id/imgCountry1"
+                android:layout_width="match_parent"
+                android:layout_height="118dp"
+                android:layout_margin="10dp"
+                 />
+
+            <include layout="@layout/shadow"></include>
+
+            <TextView
+                android:id="@+id/txtC1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="-----------"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/parent_country2"
+            android:layout_margin="5dp"
+
+            android:layout_width="match_parent"
+            android:layout_weight="0.51"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="15sp"
+                android:id="@+id/txtCountry2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="--------" />
+
+            <ImageView
+                android:id="@+id/imgCountry2"
+                android:layout_margin="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="116dp" />
+            <include layout="@layout/shadow"></include>
+
+            <TextView
+                android:id="@+id/txtC2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="-----------"
+                android:textAlignment="center"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
+</ScrollView>

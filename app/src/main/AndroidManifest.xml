@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="scopus.raoufi.ershad.scopus">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/article"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/article"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HotArticle"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AboutUs"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Search"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Compare"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SearchResult"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Chart"></activity>
+    </application>
+
+</manifest>

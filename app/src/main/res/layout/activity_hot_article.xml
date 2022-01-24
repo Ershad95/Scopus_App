@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent"
+        tools:context="com.example.ershad.zehnefarda.AboutUs"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="#ff3e3e"
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            android:weightSum="1">
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/arrow" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="مقالات داغ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView16"
+                android:layout_weight="0.96" />
+            <ImageView
+                android:tint="#fff"
+                android:layout_width="50dp"
+                android:src="@drawable/online"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+        <include layout="@layout/shadow"></include>
+        <LinearLayout
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/uk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/united_kingdom" />
+
+            <ImageView
+                android:id="@+id/sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/spain" />
+
+            <ImageView
+                android:id="@+id/sw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/sweden" />
+
+            <ImageView
+                android:id="@+id/ir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/iran" />
+
+            <ImageView
+                android:id="@+id/de"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/germany" />
+
+        </LinearLayout>
+        <include layout="@layout/shadow"></include>
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/hotArticle"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+    </ScrollView>

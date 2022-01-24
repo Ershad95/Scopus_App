@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:background="@drawable/back"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+<LinearLayout android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:background="#ff3e3e"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="60dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/menu" />
+
+        <TextView
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#ffffff"
+            android:text="منوی اصلی"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView16"
+            android:layout_weight="0.96" />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/menu" />
+    </LinearLayout>
+
+    <include layout="@layout/shadow"></include>
+    <ImageView
+        android:layout_gravity="end"
+        android:tint="#fff"
+        android:layout_marginRight="10dp"
+        android:layout_width="40dp"
+        android:src="@drawable/online"
+        android:layout_height="40dp" />
+     <Button
+         android:id="@+id/btnHot"
+            android:backgroundTint="#F44336"
+            android:background="@drawable/btn_back"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="10dp"
+            android:text="مقالات داغ"
+            android:layout_height="wrap_content" />
+    <include layout="@layout/shadow"></include>
+
+    <ImageView
+        android:tint="#fff"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:layout_width="40dp"
+        android:src="@drawable/search"
+        android:layout_height="40dp" />
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_marginBottom="5dp"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:backgroundTint="#008B8B"
+        android:background="@drawable/btn_back"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="8dp"
+        android:text="جستجو در مقالات"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/shadow"></include>
+    <ImageView
+        android:tint="#fff"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:layout_width="40dp"
+        android:src="@drawable/flag"
+        android:layout_height="40dp" />
+    <Button
+        android:id="@+id/btnCompare"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#4CAE4C"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:background="@drawable/btn_back"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="مقایسه کشور ها"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/shadow"></include>
+    <ImageView
+        android:tint="#fff"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:layout_width="40dp"
+        android:src="@drawable/ic_chart"
+        android:layout_height="40dp" />
+    <Button
+        android:id="@+id/btnChart"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#204D74"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_back"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="نمایش نمودار انتشارات"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/shadow"></include>
+    <ImageView
+        android:tint="#fff"
+        android:layout_gravity="end"
+        android:layout_marginRight="10dp"
+        android:layout_width="40dp"
+        android:src="@drawable/info"
+        android:layout_height="40dp" />
+    <Button
+        android:id="@+id/btnAbout"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#204D74"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_back"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="درباره ما"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/shadow"></include>
+
+    </LinearLayout>
+</ScrollView>

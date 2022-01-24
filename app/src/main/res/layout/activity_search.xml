@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="#ff3e3e"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/arrow" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="10dp"
+                android:layout_weight="0.96"
+                android:text="جستجو در مقالات"
+                android:textColor="#ffffff"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imgAccept"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/accept"
+                />
+        </LinearLayout>
+
+        <include layout="@layout/shadow"></include>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="کلید جستجو"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edtKey"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.89"
+                android:background="@drawable/text_edit"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/key"
+                android:tint="#fff" />
+
+        </LinearLayout>
+
+        <include layout="@layout/shadow"></include>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="نام کشور"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edtCountry"
+                android:layout_width="281dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.60"
+                android:background="@drawable/text_edit"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/flag"
+                android:tint="#fff" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="نام شهر"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edtCity"
+                android:layout_width="258dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.89"
+                android:background="@drawable/text_edit"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:src="@android:drawable/ic_dialog_map"
+                android:tint="#fff" />
+
+        </LinearLayout>
+
+        <include layout="@layout/shadow"></include>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="تعداد صفحه مقالات"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edtPage"
+                android:layout_width="281dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.42"
+                android:background="@drawable/text_edit"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/paper" />
+
+        </LinearLayout>
+
+        <include layout="@layout/shadow"></include>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="نام نویسنده"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edtCreator"
+                android:layout_width="281dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.44"
+                android:background="@drawable/text_edit"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="#fff" />
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/user"
+                android:tint="#fff" />
+
+        </LinearLayout>
+
+        <include layout="@layout/shadow"></include>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="نام دانشگاه"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <EditText
+                android:id="@+id/edtDate"
+                android:layout_width="281dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="0.44"
+                android:background="@drawable/text_edit"
+                android:gravity="center"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="#fff" />
+
+            <ImageView
+
+                android:layout_width="40dp"
+                android:tint="#fff"
+                android:layout_height="match_parent"
+                android:src="@drawable/uni" />
+        </LinearLayout>
+
+        <include layout="@layout/shadow"></include>
+
+    </LinearLayout>
+</ScrollView>
+
+
+

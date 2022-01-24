@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@drawable/background_modal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/article" />
+
+        <include layout="@layout/shadow"></include>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txtId"
+                android:layout_weight="0.68"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text="---------------------"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.14"
+                android:padding="10dp"
+                android:text="شناسه"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtCitation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.92"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="---------------------"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_weight="0.89"
+                android:text="تعداد سایتیشن"
+                android:padding="10dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView5" />
+        </LinearLayout>
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#fff"
+                android:layout_weight="0.79"
+                android:gravity="center"
+                android:text="---------------------"
+                android:padding="10dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtName" />
+
+            <TextView
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:text="نام نویسنده"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:text="---------------------"
+                android:layout_weight="0.66"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtCountry" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.18"
+                android:padding="10dp"
+                android:text="کشور"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.64"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="---------------------"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_weight="1.21"
+                android:text="شهر"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                />
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/txtPage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.89"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="---------------------"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.95"
+                android:padding="10dp"
+                android:text="تعداد صفحات"
+                android:textColor="#fff"
+                android:textStyle="bold" />
+    </LinearLayout>
+
+
+        <TextView
+                android:layout_weight="0.73"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:text="---------------------"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txtUni" />
+
+
+
+
+
+        <LinearLayout
+            android:weightSum="1"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_weight="0.5"
+                android:layout_width="194dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/Close"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:padding="10dp"
+                    android:src="@drawable/accept" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="بستن دیالوگ"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="183dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgRef"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:padding="10dp"
+                    android:tint="#fff"
+                    android:src="@drawable/online" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="مرجع"
+                    android:textColor="#fff"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+

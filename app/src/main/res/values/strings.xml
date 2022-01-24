@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Scopus</string>
+    <string-array name="country">
+        <item>Iran</item>
+        <item>Germany</item>
+        <item>Sweden</item>
+        <item>Spain</item>
+        <item>Russia</item>
+        <item>Canada</item>
+    </string-array>
+</resources>

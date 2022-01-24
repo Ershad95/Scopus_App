@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="match_parent"
+    android:background="@drawable/back"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_height="match_parent"
+        tools:context="com.example.ershad.zehnefarda.AboutUs"
+        android:orientation="vertical">
+        <LinearLayout
+            android:background="#ff3e3e"
+
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="60dp"
+            android:weightSum="1">
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/arrow" />
+
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:textSize="16dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:text="درباره ما"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView16"
+                android:layout_weight="0.96" />
+            <ImageView
+                android:tint="#fff"
+                android:layout_width="50dp"
+                android:src="@drawable/info"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+        <include layout="@layout/shadow"></include>
+        <TextView
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:text="برنامه نویس : "
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:layout_width="match_parent"
+            android:text="ارشاد رئوفی"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_width="match_parent"
+            android:text="ایمیل : "
+            android:layout_height="wrap_content" />
+        <TextView
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:text="ErshadRaoufi@gmail.com"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:text="به برنامه امتیاز دهید"
+            android:layout_height="wrap_content" />
+        <RatingBar
+            android:layout_gravity="center"
+            android:id="@+id/ratingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:text="ثبت امتیاز"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:background="@drawable/back_red"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/txtRating"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="--"
+                />
+            <TextView
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="امتیاز ثبت شده : " />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:src="@drawable/article"
+            android:layout_height="100dp" />
+    </LinearLayout>
+    </ScrollView>
